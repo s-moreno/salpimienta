@@ -1,63 +1,71 @@
+<!-- 
+  LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+  UD02 - TAREA EVALUATIVA 02: SITIO WEB
+  SERGIO MORENO SANCHEZ
+  01/12/2021
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- estilo para normalizar la visualización en los navegadores -->
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- estilo propio -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Recetas Sal y Pimienta - Inicio</title>
+  <title>Recetas Sal y Pimienta - Almejas a la marinera</title>
 </head>
 <body>
+  <!-- logo y nombre de la página -->
   <header>
     <img class="logo" src="img/logo-salypimienta.png" width="80px" alt="logo sal y pimienta"> 
     <h1>Sal y Pimienta</h1>
   </header>
 
+  <!-- menú de navegación -->
   <nav>
     <a href="index.html">Inicio</a>
     <a href="categorias.html">Categorías</a>
     <a href="noticias.html">Noticias</a>
     <a href="contacto.html">Contacto</a>
   </nav>
-
   <hr>
 
+  <!-- cuerpo principal -->
   <main>
-    <section>
-      <article>
-        <img src="img/platos-comida.jpg" alt="pancake">
-        <div>
-          <h2><u>¡Que aproveche!</u></h2>
-          <p>No importa si no has freído ni un huevo en toda tu vida. Aquí podrás encontrar tantas recetas que tendrás un menú para todos los días del año.</p>
-          <p>Os presentamos un compendio de recetas para todos los niveles de cocina y para todos los gustos.</p>
-          <p>Si buscas recetas de carnes, de pescados, de verduras o incluso los postres más deliciosos, este es tu lugar.</p>
+    <section class="receta">
+      <h1><u>Almejas a la marinera</u></h1>
+      <div class="receta-cabecera">
+        <img src="/img/almejas-marinera.jpg" alt="almejas a la marinera">
+        <div class="ingredientes">
+          <h2>Ingredientes (4 personas):</h2>
+          <hr>
+          <ul>
+            <li>800 gr de almejas</li>
+            <li>3 dientes de ajo</li>
+            <li>1 cebolla</li>
+            <li>125 ml de vino blanco</li>
+            <li>aceite de oliva</li>
+            <li>1 guindilla (opcional)</li>
+            <li>1 cucharada de harina</li>
+            <li>sal</li>
+            <li>perejil</li>
+          </ul>
         </div>
-      </article>
-    </section>
-    <aside>
-      <h2><u>Categorías</u></h2>
-      <div class="grid-categoria">
-        <a href="#" class="categoria">
-          <img src="img/carnes.jpg" alt="carnes">
-          <h3 class="categoria-texto">Carnes</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/pescados.jpg" alt="pescados">
-          <h3 class="categoria-texto">Pescados</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/verduras.jpg" alt="verduras">
-          <h3 class="categoria-texto">Verduras</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/postres.jpg" alt="postres">
-          <h3 class="categoria-texto">Postres</h3>
-        </a>
       </div>
-    </aside>
+      <div class="receta-cuerpo">
+        <h2>Elaboración de la receta:</h2>
+        <hr>
+        <p>Pon las almejas en un bol con abundante agua y una pizca de sal. Remuévelas un poco y déjalas reposar durante 1 hora para que suelten cualquier resto de arena que pueda tener. Enjuágalas.</p>
+        <p>Pela y pica la cebolleta y los dientes de ajo finamente y ponlos a rehogar en una tartera con un chorrito de aceite. Sazona y añade el trocito de guindilla.</p>
+        <p>Antes de que cojan color, agrega la harina y rehógala un poco. Vierte el vino, dale un hervor y agrega las almejas. Añade un poco de agua, tápalas y espera a que se abran.</p>
+        <p>Espolvoréalas con perejil picado y sirve.</p>
+      </div>
+    </section>
   </main>
   
+  <!-- pié de página -->
   <footer>
     <p>Sergio Moreno Sanchez | Creative Commons Attribution 4.0 International (CC BY 4.0) </p>
   </footer>

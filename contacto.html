@@ -1,73 +1,76 @@
+<!-- 
+  LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+  UD02 - TAREA EVALUATIVA 02: SITIO WEB
+  SERGIO MORENO SANCHEZ
+  01/12/2021
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importamos iconos de fontawesome -->
+  <script src="https://kit.fontawesome.com/7a380441ce.js" crossorigin="anonymous"></script>
+  <!-- estilo para normalizar la visualización en los navegadores -->
   <link rel="stylesheet" href="css/normalize.css">
+  <!-- estilo propio -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Recetas Sal y Pimienta - Inicio</title>
+  <title>Recetas Sal y Pimienta - Contacto</title>
 </head>
 <body>
+  <!-- logo y nombre de la página -->
   <header>
     <img class="logo" src="img/logo-salypimienta.png" width="80px" alt="logo sal y pimienta"> 
     <h1>Sal y Pimienta</h1>
   </header>
 
+  <!-- menú de navegación -->
   <nav>
     <a href="index.html">Inicio</a>
     <a href="categorias.html">Categorías</a>
     <a href="noticias.html">Noticias</a>
     <a href="contacto.html">Contacto</a>
   </nav>
-
   <hr>
 
+  <!-- cuerpo principal -->
   <main>
     
-    <section>
+    <section class="formulario-flex">
       <form action="mailto:smoreno@birt.eus" method="post" class="formulario">
-        Nombre: <br>
-        <input type="text" name="nombre"> <br>
-        Apellidos: <br>
-        <input type="text" name="apellidos"> <br>
-        e-mail: <br>
-        <input type="email" name="email" id="email"> <br>
-        Motivo de contacto: <br>
-        <select name="motivo" id="">
-          <option value="">consulta</option>
-          <option value="">colaboración</option>
-          <option value="">sugerencia</option>
+        <h4>Nombre:</h4>
+        <input type="text" name="nombre" class="form-item"> <br>
+        <h4>Apellidos:</h4>
+        <input type="text" name="apellidos" class="form-item"> <br>
+        <h4>e-mail:</h4>
+        <input type="email" name="email" class="form-item"> <br>
+        <h4>Motivo de contacto:</h4>
+        <select name="motivo" class="form-item">
+          <option value="consulta">consulta</option>
+          <option value="colaboracion">colaboración</option>
+          <option value="sugerencia">sugerencia</option>
         </select> <br>
-        Mensaje: <br>
-        <textarea name="mensaje"></textarea> <br>
+        <h4>Mensaje:</h4>
+        <textarea name="mensaje" class="form-item"></textarea><br><br>
         <input type="submit" value="enviar" class="boton">
       </form>
     </section>
 
+    <!-- barra lateral -->
     <aside>
       <h2><u>Estoy en...</u></h2>
-      <div class="grid-categoria">
-        <a href="#" class="categoria">
-          <img src="img/carnes.jpg" alt="carnes">
-          <h3 class="categoria-texto">Carnes</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/pescados.jpg" alt="pescados">
-          <h3 class="categoria-texto">Pescados</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/verduras.jpg" alt="verduras">
-          <h3 class="categoria-texto">Verduras</h3>
-        </a>
-        <a class="categoria">
-          <img src="img/postres.jpg" alt="postres">
-          <h3 class="categoria-texto">Postres</h3>
-        </a>
-      </div>
+      <ul class="fa-ul redes-sociales">
+        <li><a href="https://mastodon.social" target="_blank"><span class="fa-li"><i class="fab fa-mastodon"></i></span>Mastodon</a></li>
+        <li><a href="https://twitter.com" target="_blank"><span class="fa-li"><i class="fab fa-twitter"></i></span>Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank"><span class="fa-li"><i class="fab fa-instagram"></i></span>Instagram</a></li>
+        <li><a href="https://github.com" target="_blank"><span class="fa-li"><i class="fab fa-github"></i></span>GitHub</a></li>
+        <li><a href="https://facebook.com" target="_blank"><span class="fa-li"><i class="fab fa-facebook"></i></span>Facebook</a></li>
+      </ul>
     </aside>
   </main>
   
+  <!-- pié de página -->
   <footer>
     <p>Sergio Moreno Sanchez | Creative Commons Attribution 4.0 International (CC BY 4.0) </p>
   </footer>

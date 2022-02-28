@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Recetas Sal y Pimienta - Inicio</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="img/logo-salypimienta.png" width="80px" alt="logo sal y pimienta"> 
+    <h1>Sal y Pimienta</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <hr>
+
+  <main>
+    
+    <section>
+      <form action="mailto:smoreno@birt.eus" method="post" class="formulario">
+        Nombre: <br>
+        <input type="text" name="nombre"> <br>
+        Apellidos: <br>
+        <input type="text" name="apellidos"> <br>
+        e-mail: <br>
+        <input type="email" name="email" id="email"> <br>
+        Motivo de contacto: <br>
+        <select name="motivo" id="">
+          <option value="">consulta</option>
+          <option value="">colaboración</option>
+          <option value="">sugerencia</option>
+        </select> <br>
+        Mensaje: <br>
+        <textarea name="mensaje"></textarea> <br>
+        <input type="submit" value="enviar" class="boton">
+      </form>
+    </section>
+
+    <aside>
+      <h2><u>Estoy en...</u></h2>
+      <div class="grid-categoria">
+        <a href="#" class="categoria">
+          <img src="img/carnes.jpg" alt="carnes">
+          <h3 class="categoria-texto">Carnes</h3>
+        </a>
+        <a class="categoria">
+          <img src="img/pescados.jpg" alt="pescados">
+          <h3 class="categoria-texto">Pescados</h3>
+        </a>
+        <a class="categoria">
+          <img src="img/verduras.jpg" alt="verduras">
+          <h3 class="categoria-texto">Verduras</h3>
+        </a>
+        <a class="categoria">
+          <img src="img/postres.jpg" alt="postres">
+          <h3 class="categoria-texto">Postres</h3>
+        </a>
+      </div>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>Sergio Moreno Sanchez | Creative Commons Attribution 4.0 International (CC BY 4.0) </p>
+  </footer>
+</body>
+</html> 
